@@ -1,7 +1,7 @@
 const {join} = require('path')
 
 exports.config = {
-    hostname: 'localhost',
+    hostname: '127.0.0.1',
     port: 4723,
     path: '/wd/hub',
     specs: [
