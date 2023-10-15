@@ -1,10 +1,14 @@
 class HomeScreen {
-    get enterStoreAddress(){
+    get skipButton(){
         return $('id:button_skip')
     }
+    get loginButton() { return $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.Button[1]')}
 
-    async goToLogin(){
-        this.enterStoreAddress.click()
+    async goToLogin1(){
+        await this.skipButton.click()
+    }
+    async goToLogin2(){
+        await this.loginButton.click()
     }
 }
 
