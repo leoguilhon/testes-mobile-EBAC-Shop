@@ -9,13 +9,13 @@ class LoginScreen {
         return $('id:input')
     }
     get #continueSiteButton() {
-        return $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.cardview.widget.CardView/android.view.ViewGroup/android.widget.Button');
-    }
-    get #continueEmailButton() {
         return $('id:bottom_button');
     }
+    get #continueEmailButton() {
+        return $('id:login_continue_button');
+    }
     get #continuePasswordButton() {
-        return $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.cardview.widget.CardView/android.view.ViewGroup/android.widget.Button[1]');
+        return $('id:bottom_button')
     }
 
     async setStoreAddress(url) {
